@@ -1,0 +1,11 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'Student', 'x':261, 'y':182, 'width':80, 'height':122, 'attrs': 'study|name', 'meths': 'study|__init__'}
+{'type':'umlshape', 'id':'StudentA', 'x':174, 'y':10, 'width':122, 'height':64, 'attrs': '', 'meths': 'StudentA_study'}
+{'type':'umlshape', 'id':'StudentB', 'x':10, 'y':245, 'width':122, 'height':64, 'attrs': '', 'meths': 'StudentB_study'}
+{'type':'umlshape', 'id':'StudentC', 'x':514, 'y':122, 'width':122, 'height':64, 'attrs': '', 'meths': 'StudentC_study'}
+{'type':'umlshape', 'id':'object', 'x':352, 'y':353, 'width':70, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'Student_to_object', 'source':'Student', 'target':'object', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'StudentB_to_Student', 'source':'StudentB', 'target':'Student', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'StudentA_to_Student', 'source':'StudentA', 'target':'Student', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'StudentC_to_Student', 'source':'StudentC', 'target':'Student', 'uml_edge_type': 'generalisation'}
