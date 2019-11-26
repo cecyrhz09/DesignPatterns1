@@ -1,13 +1,9 @@
-'''
-Created on 23 nov. 2019
-
-@author: Cecy Rodríguez
-'''
-
-import abc
 
 
-class FlyweightFactory:
+from abc import ABC, abstractmethod
+
+
+class FileFactory:
     def __init__(self):
         self._flyweights = {}
 
@@ -15,32 +11,32 @@ class FlyweightFactory:
         try:
             flyweight = self._flyweights[key]
         except KeyError:
-            flyweight = ConcreteFlyweight()
+            flyweight = ConcreteFile()
             self._flyweights[key] = flyweight
         return flyweight
 
 
-class Flyweight(metaclass=abc.ABCMeta):
+class File(ABC):
 
     def __init__(self):
         self.intrinsic_state = None
 
-    @abc.abstractmethod
+    @abstractmethod
     def operation(self, extrinsic_state):
         pass
 
 
-class ConcreteFlyweight(Flyweight):
+class ConcreteFile(File):
     
     def operation(self, extrinsic_state):
         pass
 
 class Client:
-    def fly(self):
-        flyweight_factory = FlyweightFactory()
+    def have(self):
+        flyweight_factory = FileFactory()
         concrete_flyweight = flyweight_factory.get_flyweight("key")
         concrete_flyweight.operation(None)
 
 
 c = Client()
-c.fly()
+c.have()
