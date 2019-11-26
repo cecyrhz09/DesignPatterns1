@@ -1,0 +1,11 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'Iterator', 'x':261, 'y':182, 'width':90, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'umlshape', 'id':'EquipoA', 'x':356, 'y':376, 'width':81, 'height':138, 'attrs': 'maximum|index', 'meths': 'next|__init__|has_next'}
+{'type':'umlshape', 'id':'EquipoB', 'x':169, 'y':373, 'width':80, 'height':138, 'attrs': 'maximum|index', 'meths': 'next|__init__|has_next'}
+{'type':'umlshape', 'id':'Client', 'x':519, 'y':148, 'width':70, 'height':80, 'attrs': 'a|b', 'meths': ''}
+{'type':'umlshape', 'id':'ABC', 'x':143, 'y':176, 'width':40, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'Client_to_Iterator', 'source':'Client', 'target':'Iterator', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Iterator_to_ABC', 'source':'Iterator', 'target':'ABC', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'EquipoB_to_Iterator', 'source':'EquipoB', 'target':'Iterator', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'EquipoA_to_Iterator', 'source':'EquipoA', 'target':'Iterator', 'uml_edge_type': 'generalisation'}
