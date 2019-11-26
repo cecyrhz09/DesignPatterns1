@@ -1,0 +1,13 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'WaterState', 'x':256, 'y':128, 'width':110, 'height':138, 'attrs': '__class__|name|allowed', 'meths': '__str__|switch'}
+{'type':'umlshape', 'id':'Cold', 'x':443, 'y':379, 'width':66, 'height':80, 'attrs': 'name|allowed', 'meths': ''}
+{'type':'umlshape', 'id':'Hot', 'x':310, 'y':403, 'width':66, 'height':80, 'attrs': 'name|allowed', 'meths': ''}
+{'type':'umlshape', 'id':'Warm', 'x':153, 'y':369, 'width':66, 'height':80, 'attrs': 'name|allowed', 'meths': ''}
+{'type':'umlshape', 'id':'Water', 'x':754, 'y':357, 'width':74, 'height':122, 'attrs': 'state|model', 'meths': '__init__|change'}
+{'type':'umlshape', 'id':'ABC', 'x':119, 'y':179, 'width':40, 'height':28, 'attrs': '', 'meths': ''}
+{'type':'edge', 'id':'WaterState_to_ABC', 'source':'WaterState', 'target':'ABC', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Cold_to_WaterState', 'source':'Cold', 'target':'WaterState', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Hot_to_WaterState', 'source':'Hot', 'target':'WaterState', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Warm_to_WaterState', 'source':'Warm', 'target':'WaterState', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Cold_to_Water', 'source':'Cold', 'target':'Water', 'uml_edge_type': 'composition'}
